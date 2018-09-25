@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 
 RUN apt-get update && \
-    apt-get install -y curl make git-core && \
+    apt-get install -y curl make git-core gcc && \
     apt-get clean
 #Install Go    
 RUN curl -Lo /tmp/go1.11.tar.gz https://dl.google.com/go/go1.11.linux-amd64.tar.gz && \ 
