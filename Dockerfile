@@ -20,5 +20,6 @@ RUN make setup build
 RUN dep ensure -vendor-only
 
 #Install jFrog CLI
-RUN curl -Lo /usr/bin/jfrog https://api.bintray.com/content/jfrog/jfrog-cli-go/\$latest/jfrog-cli-linux-amd64/jfrog?bt_package=jfrog-cli-linux-amd64
+RUN curl -Lo /usr/bin/jfrog https://bintray.com/jfrog/jfrog-cli-go/download_file?file_path=1.19.1%2Fjfrog-cli-linux-amd64%2Fjfrog
+# RUN curl -Lo /usr/bin/jfrog https://api.bintray.com/content/jfrog/jfrog-cli-go/\$latest/jfrog-cli-linux-amd64/jfrog?bt_package=jfrog-cli-linux-amd64
 RUN chmod +x /usr/bin/jfrog
